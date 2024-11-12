@@ -1,3 +1,7 @@
 S1 :
 pip in python
 jdatetime in python
+
+S2 :
+sys.path
+args and kwargs
