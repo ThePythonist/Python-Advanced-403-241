@@ -5,3 +5,9 @@ jdatetime in python
 S2 :
 sys.path
 args and kwargs
+
+S3 :
+prettytable in python
+functional programming
+decorator in python
+recursive function
