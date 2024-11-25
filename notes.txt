@@ -11,3 +11,6 @@ prettytable in python
 functional programming
 decorator in python
 recursive function
+
+S4 :
+logging module in python

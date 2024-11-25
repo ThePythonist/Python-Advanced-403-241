@@ -1,6 +1,8 @@
 def func(**kwargs):
-    print(kwargs)
-    print(type(kwargs))
+    if "alireza" in kwargs["students"]:
+        print("Record exists")
+    else:
+        print("Record doesnt exists")
 
 
 func(name="adv-403-241", teacher="sadeghi", students=["ali", "fateme", "amir"])
