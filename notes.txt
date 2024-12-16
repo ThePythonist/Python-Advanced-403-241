@@ -14,3 +14,11 @@ recursive function
 
 S4 :
 logging module in python
+
+S5 :
+hashing
+an example of hashing in python
+jadval mojodiat haye project khodeton ro misazid
+ali : ketabkhoone
+amirreza : restaurant
+fatemeh : bimarestan
