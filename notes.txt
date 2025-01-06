@@ -25,3 +25,8 @@ fatemeh : bimarestan
 
 S7 :
 OOP principles (4)
+
+S10 :
+SQL
+CREATE,INSERT,SELECT,WHERE,DELETE
+ERD
