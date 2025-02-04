@@ -16,6 +16,26 @@ def createTable(name):
     conn.close()
 
 
+def insertTable(name):
+    conn = sqlite3.connect("info.db")
+    cur = conn.cursor()
+
+    query = f"PRAGMA table_info({name});"  # baraye peyda kardane esme soton ha
+    cur.execute(query)
+    column_names = [i[1] for i in cur.fetchall()]  # esme soton ha dar index 1 hastand
+    values = []
+
+    for i in column_names:
+        values.append(input(f"Enter {i} : "))
+
+    query = f"INSERT INTO {name} VALUES {tuple(values)};"
+    cur.execute(query)
+
+    print("Insert Was Successful")
+    conn.commit()
+    conn.close()
+
+
 def selectTable(name):
     conn = sqlite3.connect("info.db")
     cur = conn.cursor()
@@ -42,7 +62,8 @@ while True:
         name = input("Enter table name : ")
         createTable(name)
     elif operation == "2":
-        pass
+        name = input("Enter table name : ")
+        insertTable(name)
     elif operation == "3":
         name = input("Enter table name : ")
         selectTable(name)
