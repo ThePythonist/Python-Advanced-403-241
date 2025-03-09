@@ -18,11 +18,11 @@ import csv
 
 # ----------------------- Reading data from a CSV file -----------------------
 
-with open('data.csv', 'r') as file:
-    reader = csv.reader(file)
-    # print(list(reader))
-    for row in reader:
-        print(row)
+# with open('data.csv', 'r') as file:
+#     reader = csv.reader(file)
+#     print(list(reader))
+#     for row in reader:
+#         print(row)
 
 # ----------------------------------------------------------------------------
 
@@ -36,7 +36,7 @@ with open('data.csv', 'r') as file:
 # with open('data.csv', 'r') as file:
 #     reader = csv.reader(file)
 #     header = next(reader)
-#     print(header)
+#     # print(header)
 #     for row in reader:
 #         print(row)
 
@@ -45,4 +45,5 @@ with open('data.csv', 'r') as file:
 # with open('data.csv', 'r') as file:
 #     reader = csv.reader(file)
 #     header = next(reader)
-#     print(list(reader)[-2])
+#     # print(list(reader)[-2])
+#     print(header)
