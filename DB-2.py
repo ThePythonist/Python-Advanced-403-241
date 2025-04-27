@@ -31,6 +31,7 @@ def insert(item):
     cur = con.cursor()
 
     command2 = f"INSERT INTO employees(name,code,job) VALUES {(item['name'], item['code'], item['job'])};"
+    # print(command2)
     cur.execute(command2)
 
     con.commit()
@@ -48,18 +49,12 @@ def select(table):
         # if i[0] == 4:
         print(i)
 
-    con.commit()
-    con.close()
-
 
 # create_table()
-#
+
 # for i in students:
 #     insert(i)
 
 # insert({"name": "Bahar", "code": "40215", "job": "Civil Engineer"})
 
 select("employees")
-
-
-# print('Done')
